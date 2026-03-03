@@ -1,0 +1,15 @@
+# .NET Core / F# GitIgnore
+[Bb]in/
+[Oo]bj/
+build.log
+build_err.txt
+build_err_search.txt
+build_final.txt
+build_output.txt
+build_utf8.txt
+*.user
+*.suo
+*.sln.doccache
+.vs/
+.vscode/
+.gemini/
