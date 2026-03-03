@@ -31,6 +31,17 @@ To show the logical flow of the application, the code is organized into separate
    dotnet run
    ```
 5. Open your browser and go to: `http://localhost:5000`
+## 🐳 Docker Deployment
+You can easily build and run this application using Docker:
+
+```bash
+# Build the Docker image
+docker build -t laoairline-app .
+
+# Run the container
+docker run -d -p 8080:8080 laoairline-app
+```
+After running the container, open your browser and navigate to `http://localhost:8080`.
 
 ## 🎓 Academic Note
 This project was built from the ground up to explore F# concepts like **Discriminated Unions**, **Records**, and **Functional Routing**. The commit history reflects the step-by-step development of each component.
