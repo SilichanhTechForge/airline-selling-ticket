@@ -18,3 +18,10 @@ type BookingRequest = {
     PassengerName : string
     Email : string
 }
+
+type UserProfile = {
+    Name : string
+    MemberId : string
+    Tier : string
+    Points : int
+}

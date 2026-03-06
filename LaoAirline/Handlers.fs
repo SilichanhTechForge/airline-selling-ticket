@@ -39,3 +39,10 @@ module AppHandlers =
 
         let htmlContent = Pages.resultsPage filteredFlights
         htmlView htmlContent next ctx
+
+    let profile (next : HttpFunc) (ctx : HttpContext) =
+        let dummyUser = { Name = "Sabaidee Traveler"; MemberId = "LA123456"; Tier = "Gold"; Points = 12500 }
+        // Example: user has booked a couple of flights
+        let userBookings = [ allFlights.[0]; allFlights.[2] ]
+        let htmlContent = Pages.profilePage dummyUser userBookings
+        htmlView htmlContent next ctx

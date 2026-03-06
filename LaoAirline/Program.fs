@@ -11,6 +11,7 @@ let routes =
     choose [
         GET >=> route "/" >=> AppHandlers.home
         GET >=> route "/search" >=> AppHandlers.search
+        GET >=> route "/profile" >=> AppHandlers.profile
         
         setStatusCode 404 >=> text "Not Found"
     ]
